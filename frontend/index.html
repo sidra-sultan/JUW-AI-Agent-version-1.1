@@ -1,0 +1,254 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071e4c">
+
+    <title>JUW | AI Assistant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-shell">
+
+        <!-- ==================== HEADER ==================== -->
+        <header class="topbar">
+
+            <a
+                class="brand"
+                href="#top"
+                aria-label="JUW AI Assistant home"
+            >
+                <img
+                    src="assets/juw-logo.jpg"
+                    alt="Jinnah University for Women crest"
+                >
+
+                <span>
+                    <strong>JUW</strong>
+                    <small>Jinnah University for Women</small>
+                </span>
+            </a>
+
+            <div class="topbar-right">
+                <span class="status">
+                    <i></i>
+                    AI assistant online
+                </span>
+
+                <a
+                    class="visit-link"
+                    href="https://juw.edu.pk/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Visit JUW ↗
+                </a>
+            </div>
+
+        </header>
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <main id="top">
+
+            <!-- ==================== HERO SECTION ==================== -->
+            <section
+                class="hero"
+                aria-labelledby="hero-title"
+            >
+                <p class="eyebrow">
+                    JUW INFORMATION DESK
+                </p>
+
+                <h1 id="hero-title">
+                    How can we help
+                    <br>
+                    <em>you today?</em>
+                </h1>
+
+                <p class="hero-copy">
+                    Ask the JUW AI Assistant about programmes,
+                    departments and university information.
+                </p>
+
+                <!-- Decorative elements -->
+                <div class="accent-orb orb-one"></div>
+                <div class="accent-orb orb-two"></div>
+            </section>
+
+            <!-- ==================== CHAT WORKSPACE ==================== -->
+            <section
+                class="workspace"
+                aria-label="JUW AI chat"
+            >
+
+                <!-- Chat Header -->
+                <div class="chat-heading">
+
+                    <div>
+                        <span class="mini-label">
+                            JUW AI ASSISTANT
+                        </span>
+
+                        <h2>
+                            Your JUW information guide
+                        </h2>
+                    </div>
+
+                    <button
+                        id="clear-chat"
+                        class="clear-button"
+                        type="button"
+                    >
+                        Clear chat
+                    </button>
+
+                </div>
+
+                <!-- Chat Messages -->
+                <section
+                    id="chat"
+                    aria-live="polite"
+                >
+
+                    <!-- Welcome Message -->
+                    <article class="assistant welcome">
+
+                        <div class="avatar">
+                            J
+                        </div>
+
+                        <div>
+                            <p>
+                                Assalam o Alaikum!
+                                I’m the JUW AI Assistant.
+                            </p>
+
+                            <p>
+                                I can help with information available
+                                in the official JUW knowledge base.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </section>
+
+                <!-- ==================== SUGGESTED QUESTIONS ==================== -->
+                <div
+                    class="suggestions"
+                    aria-label="Suggested questions"
+                >
+
+                    <button
+                        type="button"
+                        data-question="What programmes does JUW offer?"
+                    >
+                        Programmes at JUW
+                    </button>
+
+                    <button
+                        type="button"
+                        data-question="Tell me about the Computer Science department."
+                    >
+                        Computer Science
+                    </button>
+
+                    <button
+                        type="button"
+                        data-question="Who are the faculty members at JUW?"
+                    >
+                        Faculty directory
+                    </button>
+
+                </div>
+
+                <!-- ==================== MESSAGE COMPOSER ==================== -->
+                <form id="form">
+
+                    <label
+                        class="sr-only"
+                        for="message"
+                    >
+                        Ask a question about JUW
+                    </label>
+
+                    <div class="composer">
+
+                        <span
+                            class="sparkle"
+                            aria-hidden="true"
+                        >
+                            ✦
+                        </span>
+
+                        <input
+                            id="message"
+                            type="text"
+                            autocomplete="off"
+                            placeholder="Ask anything about JUW…"
+                            required
+                            maxlength="1000"
+                        >
+
+                        <button
+                            type="submit"
+                            aria-label="Send question"
+                            title="Send question"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M20.7 3.3a1 1 0 0 0-1.03-.24L3.5 8.75a1 1 0 0 0 .05 1.9l7.1 2.35L13 20.1a1 1 0 0 0 1.9.05l5.98-15.82a1 1 0 0 0-.18-1.03ZM12.42 12.7 5.9 10.55l11.92-4.2-5.4 6.35Zm1.03 5.4-1.1-3.34 5.48-6.43-4.38 9.77Z"
+                                />
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <!-- Privacy / Accuracy Notice -->
+                    <p class="privacy-note">
+                        Answers are based on the JUW knowledge base.
+                        Confirm important admissions or fee details with JUW.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer>
+            <span>
+                © Jinnah University for Women
+            </span>
+
+            <span>
+                Built for the JUW community
+            </span>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
+
